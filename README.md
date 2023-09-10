@@ -3,6 +3,11 @@ This project is based for managing User's(internal and external(API)) financial 
 
 1. Getting Started
  - Composer install
+ - Copy .env.example for .env using
+  - cp .env.example .env
+  - change database creds as required.
+ - Generate key for the Laravel Application
+  - php artisan key:generate
  - run the migrations for default users and roles to create necessary table structures.
    - php artisan migrate
  - seeding the the default users and roles to get the things started.
@@ -12,6 +17,9 @@ This project is based for managing User's(internal and external(API)) financial 
  - Run the node module package for using Laravel's in-built authentication.
    - Used Node version 19.0. 
    - npm install and npm run dev
+ - Generate Passport Keys and Personal Access clients
+  - php artisan passport:keys
+  - php artisan passport:install
 
 2. About
  - Users with basic(user) role will be able to view their own transactions.
